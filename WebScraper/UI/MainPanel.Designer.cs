@@ -35,11 +35,13 @@ namespace WebScraper.UI
             this.startScrape = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(94, 87);
+            this.textBox1.Location = new System.Drawing.Point(141, 87);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(273, 20);
             this.textBox1.TabIndex = 0;
@@ -65,16 +67,35 @@ namespace WebScraper.UI
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(94, 113);
+            this.textBox2.Location = new System.Drawing.Point(141, 113);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(273, 20);
             this.textBox2.TabIndex = 3;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(56, 89);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 18);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Link";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(39, 116);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(88, 17);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Lokalizacja pliku";
+            // 
             // MainPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.startScrape);
@@ -84,6 +105,10 @@ namespace WebScraper.UI
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.Label label3;
+
+        private System.Windows.Forms.Label label2;
 
         private System.Windows.Forms.TextBox textBox2;
 
